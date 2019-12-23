@@ -1,0 +1,10 @@
+alter session set "_ORACLE_SCRIPT"=true;
+CREATE USER coupon IDENTIFIED BY coupon;
+GRANT CONNECT TO coupon;
+GRANT create sequence TO coupon;
+GRANT create any procedure TO coupon;
+GRANT create table TO coupon;
+GRANT create session TO coupon;
+GRANT unlimited tablespace to coupon;
+GRANT ALL PRIVILEGES TO coupon;
+commit;
